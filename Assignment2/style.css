@@ -29,3 +29,13 @@ h1{
     background-color: #D9D8D6;
     display: inline-block;
 }
+
+article {
+    column-count: 3;
+    column-gap: 40px;
+    column-rule: solid;
+    width: 100%;
+    position: relative;
+    margin-top: 25px;
+    text-align: justify;
+}
