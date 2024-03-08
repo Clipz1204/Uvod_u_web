@@ -16,6 +16,8 @@ h1{
 
 .time time {
     text-align: center; /* TODO */
+    font-weight: bold;
     text-transform: uppercase;
     background-color: #D9D8D6;
 }
+
