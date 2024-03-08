@@ -43,3 +43,9 @@ article {
 blockquote{
     column-span: all;
 }
+
+h2{
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-top: 16px;
+}
