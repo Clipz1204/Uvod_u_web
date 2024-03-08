@@ -13,3 +13,9 @@ h1{
     border-top: 2px solid black;
     border-bottom: 2px solid black;
 }
+
+.time time {
+    text-align: center; /* TODO */
+    text-transform: uppercase;
+    background-color: #D9D8D6;
+}
