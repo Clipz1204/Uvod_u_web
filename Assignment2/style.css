@@ -42,6 +42,18 @@ article {
 
 blockquote{
     column-span: all;
+    text-wrap: wrap;
+    font-weight: bold;
+    font-size: 26px;
+    margin: 10px 15px;
+}
+
+blockquote::after{
+    content: '"';
+}
+
+blockquote::before{
+    content: '"';
 }
 
 h2{
