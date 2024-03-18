@@ -75,4 +75,17 @@ ul{
 
 figure{
     float: left;
+    margin: 16px;
+    margin-left: 0;
+}
+
+figure img{
+    width: 130px;
+    filter: grayscale();
+}
+
+figcaption{
+    text-align: center;
+    font-weight: bold;
+    font-size: 12px;
 }
