@@ -7,11 +7,25 @@ body{
     background-color: #FAF7F2;
     width: 85%;
     margin: 0px auto;
+    font-family: "Fanwood Text", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+h1, h2, h3{
+    font-family: "Lalezar", system-ui;
+    font-weight: 400;
+    font-style: normal;
+}
+
+p{
+    margin-top: 16px;
 }
 
 h1{
     text-align: center;
     text-transform: uppercase;
+    font-size: 56px;
     font-weight: bold;
     margin: 24px 0;
 }
@@ -30,6 +44,10 @@ h1{
     display: inline-block;
 }
 
+.author{
+    margin-top: 16px;
+}
+
 article {
     column-count: 3;
     column-gap: 40px;
@@ -44,7 +62,7 @@ blockquote{
     column-span: all;
     text-wrap: wrap;
     font-weight: bold;
-    font-size: 26px;
+    font-size: 40px;
     margin: 10px 15px;
 }
 
@@ -57,6 +75,7 @@ blockquote::before{
 }
 
 h2{
+    font-size: 32px;
     text-transform: uppercase;
     font-weight: bold;
     margin-top: 16px;
