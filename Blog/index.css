@@ -3,16 +3,20 @@ body {
     padding: 0;
     height: 100vh;
     background-color: beige;
+    font-family: sans-serif;
 }
 
-a{
-    text-decoration: none;
-    color: rgb(84, 84, 218);
+.global-padding{
+    padding: 16px 100px;
 }
 
 .container .nav{
     background-color: rgb(215, 190, 190);
-    padding: 8px 16px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+
 }
 
 .container .nav img{
@@ -26,5 +30,119 @@ a{
 }
 
 .container .nav ul li{
+    display: inline;
+    margin-right: 8px;
+}
+
+.container .nav ul li:last-child{
+    margin-right: 0px;
+}
+
+.container .nav ul li a{
+    padding: 4px 8px;
+    border-bottom: 1px solid black;
+    color: rgb(25, 25, 25);
+}
+
+.bg-image{
+    height: 500px;
+    background-image: url(Images/8w53nbu0o3l71.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.bg-image h1{
+    margin-top: 0;
+}
+
+.bg-image p{
+    margin: 0;
+}
+
+section.description{
+    margin: 40px 64px;
+}
+
+section.description p:not(:last-child){
+    margin-top: 0;
+    margin-bottom: 16px;
+}
+
+section.description p:last-child{
+    margin-bottom: 0px;
+}
+
+.card-wrapper{
+    display: flex;
+    grid-template-columns: 1fr 1fr 1fr;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.card-wrapper .blog-card{
+    width: 200px;
+    margin: 8px;
+    text-align: justify;
+    overflow: hidden;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    border-radius: 6px;
+}
+
+.card-wrapper .blog-card img{
+    width: 200px;
+    height: 150px;
+    object-fit: cover;
+}
+
+.card-wrapper .card-content{
+    padding: 8px 16px;
+}
+
+.card-wrapper .card-content h2{
+    margin-top: 0;
+    margin-bottom: 8px;
+    display: flex;
+    flex-direction: column;
+}
+
+.card-wrapper .card-content span{
+    font-size: 10px;
+    color: rgb(169, 157, 157);
+}
+
+.card-wrapper .card-content a{
+    font-size: 10px;
+    align-self: flex-end;
+}
+
+.footer{
+    border-top: 1px solid #191919;
+    text-align: center;
+}
+
+.footer>div{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.footer img{
+    height: 100px;
+}
+
+.footer .follow-us{
+    display: flex;
+    flex-direction: column;
+}
+
+.footer .follow-us i{
     display: inline;
 }
