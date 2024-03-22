@@ -4,12 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="index.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Blog</title>
 </head>
 <body>
     <div class="container">
-        <header></header>
-            <nav class="nav">
+        <header>
+            <nav class="nav global-padding">
                 <img alt="logo" src="Images/logo (2).png">
                 <ul>
                     <li><a href="index.html">Home</a></li>
@@ -17,16 +18,17 @@
                     <li><a href="contact.html">Contact</a></li>
                 </ul>
             </nav>
-            <h1>Welcome to my blog</h1>
-            <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et doloremagna aliqua.
-                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-                Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-            </p>
+            <div class="bg-image">
+                <h1>Welcome to my blog</h1>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et doloremagna aliqua.
+                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                    Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                </p>
+            </div>
         </header>
-        <section>
-            <img src="Images/8w53nbu0o3l71.png">
+        <section class="description global-padding">
             <p>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et doloremagna aliqua.
                 Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
@@ -40,32 +42,49 @@
                 Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
             </p>
         </section>
-        <section>
-            <div>
+        <section class="card-wrapper global-padding">
+            <div class="blog-card">
                 <img src="Images/9fhwioyrxrf31.jpg">
-                <h3>This is my first blog post.</h3>
-                <span>02.03.2024.</span>
-                <p>More about first blog post</p>
-                <a href="first-post.html">Read More >>.</a>
+                <div class="card-content">
+                    <h3>This is my first blog post.</h3>
+                    <span>02.03.2024.</span>
+                    <p>More about first blog post</p>
+                    <a href="first-post.html">Read More >>.</a>
+                </div>
             </div>
-            <div>
+            <div class="blog-card">
                 <img src="Images/2g3w9uf0hfk61.jpg">
-                <h3>This is my second blog post.</h3>
-                <span>02.03.2024.</span>
-                <p>More about second blog post</p>
-                <a href="first-post.html">Read More >>.</a>
+                <div class="card-content">
+                    <h3>This is my second blog post.</h3>
+                    <span>02.03.2024.</span>
+                    <p>More about second blog post</p>
+                    <a href="first-post.html">Read More >>.</a>
+                </div>
             </div>
-            <div>
+            <div class="blog-card">
                 <img src="Images/b5jec682hfk61.jpg">
-                <h3>This is my third blog post.</h3>
-                <span>02.03.2024.</span>
-                <p>More about third blog post</p>
-                <a href="first-post.html">Read More >>.</a>
+                <div class="card-content">
+                    <h3>This is my third blog post.</h3>
+                    <span>02.03.2024.</span>
+                    <p>More about third blog post</p>
+                    <a href="first-post.html">Read More >>.</a>
+                </div>
             </div>
         </section>
-        <footer>
+        <footer class="footer global-padding">
+            <div>
+                <img alt="logo" src="Images/logo (2).png">
+                <div class="follow-us">
+                    <p>Follow us:</p>
+                    <div>
+                        <i class="fa-brands fa-facebook"></i>
+                        <i class="fa-brands fa-instagram"></i>
+                        <i class="fa-brands fa-twitter"></i>
+                    </div>
+                </div>
+            </div>
             <span>This is footer example</span>
-            <p>@ 2024 My blog. All rights reserved.</p>
+            <p>&copy; 2024 My blog. All rights reserved.</p>    
         </footer>
     </div>
 </body>
