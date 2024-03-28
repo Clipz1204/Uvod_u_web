@@ -73,7 +73,12 @@ a {
 section{
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
+    justify-content: space-between;
+    margin: 24px 8px;
+}
+
+section div{
+    text-align: center;
 }
 
 .registration{
