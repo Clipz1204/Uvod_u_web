@@ -87,6 +87,23 @@ section div{
     justify-content: space-evenly;
 }
 
+.registration input{
+    width: 500px;
+    margin-bottom: 12px;
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid #472f1d;
+}
+
+.registration input[type=submit]{
+    color: #A59991;
+    background-color: #472f1d;
+}
+
+.registration label{
+    margin-bottom: 6px;
+}
+
 .padding-footer {
     padding: 16px 10%;
 }
