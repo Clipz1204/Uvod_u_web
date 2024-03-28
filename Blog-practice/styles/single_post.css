@@ -106,7 +106,9 @@ a {
 }
 
 .content .blog-text::first-letter{
-    font-weight: bold;
+    font-weight: 500px;
+    font-size: 30px;
+    padding-left: 16px;
 }
 
 .padding-footer {
