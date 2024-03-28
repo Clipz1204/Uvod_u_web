@@ -57,12 +57,17 @@ a {
 
 .main{
     display: flex;
-    justify-content: space-evenly;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: space-between;
 }
 
 .main-img{
     width: 600px;
     height: auto;
+    margin: 26px 0px;
+    border-radius: 12px;
 }
 
 section{
