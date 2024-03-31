@@ -57,8 +57,16 @@ a {
     border-bottom: 1px solid #472f1d;
 }
 
-
-
+.main{
+    height: 500px;
+    background-image: url(../images/photo-1.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: grid;
+    align-content: center;
+    justify-content: center;
+}
 
 .padding-footer {
     padding: 16px 10%;
