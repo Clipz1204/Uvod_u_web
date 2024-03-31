@@ -68,6 +68,15 @@ a {
     justify-content: center;
 }
 
+.heading{
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.heading h1{
+    margin-bottom: 10px;
+}
+
 .padding-footer {
     padding: 16px 10%;
 }
