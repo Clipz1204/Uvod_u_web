@@ -147,4 +147,32 @@ djaci.forEach(function (element){
     element.prosjek = element.izracunajProsjek();
 });
 
+djaci.forEach(function (element){
+    const pol = element["pol"];
+    const prosjek = element["prosjek"];
+    let uspjeh;
+    if(pol==="muški"){
+        if(prosjek>=1.5 && prosjek<2.5){
+            uspjeh = 'zadovoljan';
+        }else if(prosjek>=2.5 && prosjek<3.5){
+            uspjeh = 'dobar';
+        }else if(prosjek>=3.5 && prosjek<4.5){
+            uspjeh = 'vrlodobar';
+        }else if(prosjek>=4.5 && prosjek<=5){
+            uspjeh = 'odlican';
+        }
+    }else{
+        if(prosjek>=1.5 && prosjek<2.5){
+            uspjeh = 'zadovoljna';
+        }else if(prosjek>=2.5 && prosjek<3.5){
+            uspjeh = 'dobra';
+        }else if(prosjek>=3.5 && prosjek<4.5){
+            uspjeh = 'vrlodobra';
+        }else if(prosjek>=4.5 && prosjek<=5){
+            uspjeh = 'odlicna'
+        }
+    }
+    element.uspjeh = () => console.log(`${element['ime']} ${element['prezime']} je ${uspjeh}.`);
+})
+
 console.log(djaci);
