@@ -181,4 +181,30 @@ djaci.forEach(function (element){
     element.uspjeh = () => console.log(`${element['ime']} ${element['prezime']} je ${uspjeh}.`);
 })
 
-console.log(djaci);
+function statistikaUspjeha(niz){
+    const obj = {
+        Odlican : 0,
+        Vrlodobar : 0,
+        Dobar: 0,
+        Zadovoljan: 0,
+        Nedovoljan: 0
+    };
+    niz.forEach(function (element){
+        let prosjek = element["prosjek"];
+        if(prosjek<1.5){
+            obj["Nedovoljan"]++;
+        }
+        else if(prosjek>=1.5 && prosjek<2.5){
+            obj["Zadovoljan"]++;
+        }else if(prosjek>=2.5 && prosjek<3.5){
+            obj["Dobar"]++;
+        }else if(prosjek>=3.5 && prosjek<4.5){
+            obj["Vrlodobar"]++;
+        }else if(prosjek>=4.5 && prosjek<=5){
+            obj["Odlican"]++;
+        }
+    })
+    return obj;
+}
+
+console.log(statistikaUspjeha(djaci));
