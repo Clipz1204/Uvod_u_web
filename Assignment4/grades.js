@@ -152,7 +152,10 @@ djaci.forEach(function (element){
     const prosjek = element["prosjek"];
     let uspjeh;
     if(pol==="muški"){
-        if(prosjek>=1.5 && prosjek<2.5){
+        if(prosjek<1.5){
+            uspjeh = 'nedovoljan';
+        }
+        else if(prosjek>=1.5 && prosjek<2.5){
             uspjeh = 'zadovoljan';
         }else if(prosjek>=2.5 && prosjek<3.5){
             uspjeh = 'dobar';
@@ -162,7 +165,10 @@ djaci.forEach(function (element){
             uspjeh = 'odlican';
         }
     }else{
-        if(prosjek>=1.5 && prosjek<2.5){
+        if(prosjek<1.5){
+            uspjeh = 'nedovoljan';
+        }
+        else if(prosjek>=1.5 && prosjek<2.5){
             uspjeh = 'zadovoljna';
         }else if(prosjek>=2.5 && prosjek<3.5){
             uspjeh = 'dobra';
