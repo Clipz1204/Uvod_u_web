@@ -223,7 +223,7 @@ section.description {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    align-items: flex-start;
+    align-items: center;
 }
 
 .copyright {
