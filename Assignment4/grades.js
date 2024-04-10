@@ -207,4 +207,9 @@ function statistikaUspjeha(niz){
     return obj;
 }
 
-console.log(statistikaUspjeha(djaci));
+function sortArr(niz){
+    return niz.sort((a, b) => a.prezime.localeCompare(b.prezime));
+}
+
+
+console.log(sortArr(djaci));
