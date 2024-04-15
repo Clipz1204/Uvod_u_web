@@ -283,6 +283,10 @@ section.description {
     row-gap: 22px;
   }
 
+  .description {
+    grid-column: 1/2;
+  }
+
   .aside-content {
     grid-column: 1/2;
     grid-row: span 1;
