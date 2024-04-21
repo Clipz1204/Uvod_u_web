@@ -1,0 +1,27 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  gap: 400px;
+}
+
+#controls {
+  display: flex;
+  flex-direction: column;
+}
+
+#buttons {
+  display: grid;
+  grid-template-columns: 150px 150px 150px;
+  grid-template-rows: 100px 100px 100px;
+  row-gap: 15px;
+  column-gap: 15px;
+}
