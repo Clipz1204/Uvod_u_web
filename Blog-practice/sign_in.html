@@ -35,12 +35,12 @@
               Don't have an account? <a href="./register.html">Register now!</a>
             </p>
           </div>
-          <form>
+          <form id="loginForm">
             <label for="username">Username:</label>
-            <input type="text" name="username" />
+            <input type="text" name="username" id="username" />
             <label for="password">Password:</label>
-            <input type="password" name="password" />
-            <input type="submit" value="Sign In" />
+            <input type="password" name="password" id="password" />
+            <input type="button" value="Sign In" id="signInBtn" />
           </form>
         </section>
       </div>
@@ -74,5 +74,6 @@
         </p>
       </footer>
     </div>
+    <script src="scripts/login.js"></script>
   </body>
 </html>

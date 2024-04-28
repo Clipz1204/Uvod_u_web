@@ -4,7 +4,7 @@ const params = new URLSearchParams(window.location.search);
 
 const id = Number(params.get("id"));
 
-const postForId = photographyBlogPosts.filter((post) => id === post.id)[0];
+// const postForId = photographyBlogPosts.filter((post) => id === post.id)[0];
 
 function generatePost(imageLink, title, date, description, author) {
   return `
@@ -20,10 +20,23 @@ function generatePost(imageLink, title, date, description, author) {
     `;
 }
 
-postContainer.innerHTML += generatePost(
-  postForId["imageLink"],
-  postForId["title"],
-  formatDate(postForId["date"]),
-  postForId["description"],
-  postForId["author"]
-);
+fetch(`https://dev-lab.dev/api/posts/${id}`)
+  .then((res) => res.json())
+  .then((data) => {
+    console.log(data);
+    postContainer.innerHTML += generatePost(
+      `https://dev-lab.dev/api/posts/${data["image"]}`,
+      data["title"],
+      formatDate(data["date_created"]),
+      data["description"],
+      data["author"]
+    );
+  });
+
+// postContainer.innerHTML += generatePost(
+//   postForId["imageLink"],
+//   postForId["title"],
+//   formatDate(postForId["date"]),
+//   postForId["description"],
+//   postForId["author"]
+// );
